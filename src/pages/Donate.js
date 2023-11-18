@@ -61,7 +61,7 @@ const Donate = () => {
     </Row>
     </div>
     <div className="foot">
-        <h4>Or anything which is Donatable!</h4>
+        <h4>or any other Non-perishable food item</h4>
     </div>
     </div>
     </>
