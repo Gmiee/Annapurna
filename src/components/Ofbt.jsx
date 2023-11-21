@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+// import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
 const Ofbt = () => {
@@ -12,7 +13,7 @@ const Ofbt = () => {
 
   return (
     <>
-      {['lg'].map((expand) => (
+      {['xl'].map((expand) => (
         <Navbar sticky="top" key={expand} expand={expand} className="bg-body-tertiary">
           <Container fluid>
             <Navbar.Brand>A N N A P U R N A</Navbar.Brand>
