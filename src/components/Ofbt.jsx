@@ -35,9 +35,9 @@ const Ofbt = () => {
                   <Nav.Link as={Link} to={'/'} onClick={handleCloseOffcanvas}>
                     <button className='btn01'>Home</button>
                   </Nav.Link>
-                  <Nav.Link as={Link} to={'/About'} onClick={handleCloseOffcanvas}>
+                  {/* <Nav.Link as={Link} to={'/About'} onClick={handleCloseOffcanvas}>
                     <button className='btn01'>About</button>
-                  </Nav.Link>
+                  </Nav.Link> */}
                   <Nav.Link as={Link} to={'/Donate'} onClick={handleCloseOffcanvas}>
                     <button className='btn01'>Donate</button>
                   </Nav.Link>

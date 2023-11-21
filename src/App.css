@@ -222,6 +222,11 @@ input[type="button"].fcf-btn-block {
   gap: 7px;
   align-items: center;
 }
+.wa{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
 @media screen and (max-width: 760px) {
   .section1 {
     display: flex;
