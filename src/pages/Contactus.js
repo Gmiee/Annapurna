@@ -118,15 +118,18 @@ const Contactus = () => {
                       >
                         Send
                       </button>
-                      <Button margin={'2'}  onClick={onOpen}>
+                      <Button margin={'2'} style={{background:'transparent'}} onClick={onOpen}>
+
                         <FaWhatsapp size={30} color="black" />
-                      </Button>
+                      
                       <Modal
                         blockScrollOnMount={false}
                         isOpen={isOpen}
                         onClose={onClose}
                       >
-                        <ModalOverlay />
+                        <ModalOverlay
+                         bg='blackAlpha.300'
+                         backdropFilter='blur(10px)' />
                         <ModalContent>
                           <ModalHeader>WhatsApp</ModalHeader>
                           <ModalCloseButton />
@@ -176,6 +179,7 @@ const Contactus = () => {
                           </ModalFooter>
                         </ModalContent>
                       </Modal>
+                      </Button>
                     </div>
                   </div>
                 </form>

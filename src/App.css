@@ -227,6 +227,14 @@ input[type="button"].fcf-btn-block {
   gap: 15px;
   align-items: center;
 }
+.abt{
+  text-align: center;
+  margin: 12px 0;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  font-weight: 400;
+  cursor: pointer;
+}
 @media screen and (max-width: 760px) {
   .section1 {
     display: flex;
