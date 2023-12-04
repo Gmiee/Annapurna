@@ -42,7 +42,7 @@ const About = () => {
           </div>
           <div className="centerButton">
               <Nav.Link as={Link} to={"/Contactus"}>
-                <button style={{ fontSize: '20px', background:'blue', color:'white' , padding:'10px', borderRadius:'10px' }} className="btn01">Contact Us</button>
+                <button style={{ fontSize: '20px', background:'rgb(11, 94, 215)', color:'white' , padding:'10px', borderRadius:'10px' }} className="btn01">Contact Us</button>
               </Nav.Link>
             </div>
         </section>
