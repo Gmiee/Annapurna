@@ -11,7 +11,6 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 const Ofbt = () => {
   const {user, loginWithRedirect, logout, isAuthenticated } = useAuth0();
-  console.log(user)
 
   const [showOffcanvas, setShowOffcanvas] = useState(false);
 
@@ -35,7 +34,7 @@ const Ofbt = () => {
                 <Offcanvas.Title style={{ fontFamily: '"Poppins", sans-serif'}} id={`offcanvasNavbarLabel-expand-${expand}`}>
                   A N N A P U R N A
                 {
-                  isAuthenticated ? ( <p style={{fontSize:'13px', display:'inline' ,margin:'auto 15px'}}>Hello {user.name}👋</p> ) : ('')
+                  isAuthenticated ? ( <p style={{fontSize:'18px', display:'inline' ,padding:'18px'}}>Hello,{user.name}</p> ) : ('')
                 }
                 </Offcanvas.Title>
               </Offcanvas.Header>
@@ -65,8 +64,6 @@ const Ofbt = () => {
                 </>
               )}
             </Container>
-               
-
             </Navbar.Offcanvas>
           </Container>
         </Navbar>
