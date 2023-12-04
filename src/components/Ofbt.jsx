@@ -6,12 +6,11 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
-import { Avatar, AvatarBadge, AvatarGroup } from '@chakra-ui/react'
+import { Avatar} from '@chakra-ui/react'
 
 
 const Ofbt = () => {
   const {user, loginWithRedirect, logout, isAuthenticated } = useAuth0();
-  console.log(user)
 
   const [showOffcanvas, setShowOffcanvas] = useState(false);
 
@@ -23,6 +22,7 @@ const Ofbt = () => {
         <Navbar sticky="top" key={expand} expand={expand} className="bg-body-tertiary">
           <Container fluid>
               <Navbar.Brand>A N N A P U R N A</Navbar.Brand> 
+              <Button onClick={e => loginWithRedirect()} variant="primary" style={{marginLeft: 'auto', marginRight:'10px'}}>Login</Button>{''}
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} onClick={() => setShowOffcanvas(true)} />
             <Navbar.Offcanvas
               show={showOffcanvas}
