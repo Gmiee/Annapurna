@@ -235,6 +235,7 @@ input[type="button"].fcf-btn-block {
   font-weight: 400;
   cursor: pointer;
 }
+
 @media screen and (max-width: 760px) {
   .section1 {
     display: flex;
