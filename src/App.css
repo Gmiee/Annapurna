@@ -1,5 +1,6 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap');
 
 .section1 {
   height: 50vh;
@@ -217,17 +218,17 @@ input[type="button"].fcf-btn-block {
 .btn01:hover {
   color: #545b62;
 }
-.btns{
+.btns {
   display: flex;
   gap: 7px;
   align-items: center;
 }
-.wa{
+.wa {
   display: flex;
   gap: 15px;
   align-items: center;
 }
-.abt{
+.abt {
   text-align: center;
   margin: 12px 0;
   font-family: "Poppins", sans-serif;
@@ -239,7 +240,7 @@ input[type="button"].fcf-btn-block {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; 
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -269,3 +270,5 @@ input[type="button"].fcf-btn-block {
     border-radius: 5px;
   }
 }
+
+

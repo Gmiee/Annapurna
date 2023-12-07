@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-// import Sidebar from "./components/Sidebar";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Donate from "./pages/Donate";
@@ -10,7 +9,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      {/* <Sidebar /> */}
         <Ofbt/>
         <Routes>
           <Route path="/" element={<Home />} />

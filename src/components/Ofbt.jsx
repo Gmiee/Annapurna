@@ -67,7 +67,7 @@ const Ofbt = () => {
               </Offcanvas.Body>
               <Container style={{ display: 'flex', justifyContent: 'center', marginBottom: '15px' }}>
                 {isAuthenticated ? (
-                  <Button onClick={e => logout()}>Logout</Button>
+                  <Button style={{backgroundColor:'tomato', border:'0'}} onClick={e => logout()}>Logout</Button>
                 ) : (
                   <>
                     <Button onClick={e => loginWithRedirect()} variant='outline-primary' style={{ marginRight: '5px' }}>Login</Button>
