@@ -13,7 +13,6 @@ const Ofbt = () => {
   const { user, loginWithRedirect, logout, isAuthenticated } = useAuth0();
 
   const [showOffcanvas, setShowOffcanvas] = useState(false);
-
   const handleCloseOffcanvas = () => setShowOffcanvas(false);
 
   return (

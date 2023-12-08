@@ -4,21 +4,3 @@ body {
   margin: 0;
   line-height: normal;
 }
-:root {
-  /* fonts */
-  --font-montserrat: Plus Jakarta Sans;
-
-  /* font sizes */
-  --font-size-base: 16px;
-  --font-size-xs: 12px;
-
-  /* Colors */
-  --color-white: #fff;
-  --color-whitesmoke: #f6f6f6;
-  --color-darkslategray: #1a2e4d;
-  --color-gray: #888;
-  --color-royalblue: #0b5ed7;
-
-  /* Border radiuses */
-  --br-5xl: 24px;
-}

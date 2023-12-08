@@ -2,6 +2,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap');
 
+:root {
+  /* HEADING */
+  --H1-font-family: 'Plus Jakarta Sans'; 
+  --H1-font-weight:'400';
+  --H1-font-size:'60px';
+  --H1-line-height:'120%';
+  /* HEADING MEDIUM */
+  --H1M-font-weight:'500';
+  /* HEADING-1 SEMI BOLD-600 */
+  --H1SB-font-weight:'600';
+  /* HEADING-1 BOLD-700 */
+  --H1B-font-weight:'700';
+  
+  /* HEADING-2 */
+  --H2-font-size:'48px';
+  
+  /* HEADING-3 */
+  --H3-font-size:'32px';
+  
+  /* TILE AND BODY */
+  --Tb-font-size:'28px';
+  
+  /* BODY */
+  --B-font-size:'16px';
+  --B-line-height:'150%';
+
+
+}
+.dummy{
+  font-family: var(--H1-font-family);
+  font-weight: var(--H1-font-weight);
+  font-size: var(--H1-font-size);
+  line-height: var(--H1-line-height);
+}
 .section1 {
   height: 50vh;
   width: 100%;

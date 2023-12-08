@@ -1,14 +1,6 @@
 import React from "react";
-// import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import img1 from "../Assets/06.jpg";
-// import img2 from '../Assets/02.jpg';
-// import img3 from "../Assets/03.jpg";
-// import img4 from "../Assets/04.jpg";
-// import img5 from "../Assets/05.jpg";
-// import img6 from "../Assets/01.JPG";
-// import img7 from "../Assets/07.JPG";
-// import About from "./About";
 import { Link } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
 import {
@@ -24,6 +16,18 @@ import {
 } from "@chakra-ui/react";
 import img001 from "../Assets/001.png";
 const Home = () => {
+  const main = {
+    primary: '#0B82D7',
+    black: '#0D1C26',
+    white: '#FFFFFF',
+}
+const neutral ={
+    gray20: '#3D4952',
+    gray40: '#6E777D',
+    gray60: '#9EA4A8',
+    gray80: '#CFD2D4',
+    gray90: '#F3F4F4'
+}
   return (
     <>
       {/* <div className="c">
@@ -68,7 +72,7 @@ const Home = () => {
             maxWidth={{ base: "100%", md: "850px" }}
             marginX={{ base: "20px", md: "0" }}
           >
-            <GridItem className="B001" py={5}  bg="#F6F6F6" borderRadius="24px">
+            <GridItem className="B001" py={5}  bg="#F6F6F6" borderRadius="16px">
               <Box
                 h="100%"
                 display="grid"
@@ -83,16 +87,16 @@ const Home = () => {
 
               </Box>
             </GridItem>
-            <GridItem bg="#F6F6F6" p={1} borderRadius="24px" >
+            <GridItem bg="#F6F6F6" p={1} borderRadius="16px" >
               <Box h="100%" textAlign="center" color="white">
                 <img
-                  style={{ aspectRatio: "16/9", borderRadius: "24px" }}
+                  style={{ aspectRatio: "16/9",objectFit:'cover', borderRadius: "16px" }}
                   src={img1}
                   alt="GroupPhoto"
                 />
               </Box>
             </GridItem>
-            <GridItem bg="#E7F0FE" h="100%" w="100%" p={5} borderRadius="24px">
+            <GridItem bg="#E7F0FE" h="100%" w="100%" p={6} borderRadius="16px">
               <Box h="100%" color="white">
                 <Text
                   fontSize="xs"
@@ -100,7 +104,7 @@ const Home = () => {
                   color="#0B5ED7"
                   fontFamily= 'Plus Jakarta Sans'
                 >
-                  What we do
+                  What We Do
                 </Text>
                 {/* <Text fontSize="xs" fontFamily= 'Plus Jakarta Sans' style={{ textAlign: "left", fontWeight:'500' }} color="#1A2E4D">
                   We are group of friends who <br /> believe in donating
@@ -109,10 +113,7 @@ const Home = () => {
                   and <br /> donate the essentials
                 </Text> */}
                 <Text fontSize="1rem" fontFamily= 'Plus Jakarta Sans' style={{ textAlign: "left", fontWeight:'500' }} color="#1A2E4D">
-                  We are group of friends who believe in donating
-                  directly toneedy people. Every Sunday We
-                  Collect and People Join us to Visit the nearby areas
-                  and donate the essentials
+                We are a group of friends who want to make Sundays special. Every week, we gather important things like food, wheat, and rice. Then, we go to places where people need help and give them these things directly. You can be part of this too! Join us in making Sundays about helping others and creating a positive difference in their lives.
                 </Text>
                 <Image style={{filter:'grayscale(100%)'}} ml="auto" height='200px' src={img001} alt="KID" />
               </Box>
@@ -122,17 +123,18 @@ const Home = () => {
                 bg="#F6F6F6"
                 w="100%"
                 h="100%"
-                p={5}
-                borderRadius="24px"
+                p={4}
+                borderRadius="16px"
+                
               >
-                <Box h="100%" textAlign="center">
+                <Box h="100%" textAlign="center" style={{display:'grid',alignItems:'left', justifyContent:'space-between'}}>
                   <Text
                     fontSize="xs"
                     style={{ textAlign: "left" , fontWeight:'700' }}
                     color="#888"
                     fontFamily= 'Plus Jakarta Sans'
                   >
-                    How can you Contribute to this Good Deed
+                    How Can You Contribute To This Good Deed
                   </Text>
                   <Text
                     fontSize="xs"
@@ -140,14 +142,12 @@ const Home = () => {
                     color="#1A2E4D"
                     fontFamily= 'Plus Jakarta Sans'
                   >
-                    If you only want to come for service, you are most welcome
-                    to come. Help us fill tables with hope! Join our campaign
-                    and let's make a difference in someone's life.
+                    Want to be part of something good? You can help! Contribute by donating essential items like food, wheat, or rice. Join us on Sundays as we share these supplies directly with those in need. Your time, items, or even a simple presence can make a big difference. Let's spread kindness together – join our mission and contribute to making the world a better place, one Sunday at a time.
                   </Text>
                   <Button
                     as={Link}
                     to={"/Contactus"}
-                    style={{ background: "#0B5ED7", color: "white",fontFamily: 'Plus Jakarta Sans', textTransform:'uppercase' }}
+                    style={{ background: "#0B5ED7", color: "white",fontFamily: 'Plus Jakarta Sans', textTransform:'uppercase', width:'40%' }}
                   >
                     Contact us
                   </Button>
@@ -156,12 +156,11 @@ const Home = () => {
               <GridItem
                 bg="#F6F6F6"
                 w="100%"
-                h="100%"
+                h="60%"
                 p={5}
-                
-                borderRadius="24px"
+                borderRadius="16px"
               >
-                <Box h="100%" textAlign="center" color="#000">
+                <Box h="100%" textAlign="center" color="#000" style={{display:'grid',alignItems:'left', justifyContent:'space-between'}}>
                   <Text
                     fontSize="xs"
                     style={{ textAlign: "left", fontWeight:'700' }}
@@ -171,17 +170,16 @@ const Home = () => {
                     New Update
                   </Text>
                   <Text
-                    style={{ textAlign: "left", fontSize: "15px",fontWeight:'500'}}
+                    style={{ textAlign: "left", fontSize: "28px",fontWeight:'500'}}
                     color="#0B5ED7"
                     fontFamily= 'Plus Jakarta Sans'
                   >
                     Upcoming campaign on 10Dec Sunday!
                   </Text>
                   <Button
-                    colorScheme="whatsapp"
                     leftIcon={<FaWhatsapp size={25} />}
-                    borderRadius="50px"
-                    style={{marginTop:'10px' ,fontFamily:'Plus Jakarta Sans',textTransform:'uppercase', fontWeight:'700'}}
+                    borderRadius="10px"
+                    style={{marginTop:'10px' ,fontFamily:'Plus Jakarta Sans',textTransform:'uppercase', fontWeight:'500', backgroundColor:neutral.gray20, color:main.white}}
                   >
                     <a
                       href="https://chat.whatsapp.com/LBbGRUlvgeCFFsXLpNryJQ"
