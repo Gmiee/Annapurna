@@ -243,7 +243,6 @@ input[type="button"].fcf-btn-block {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 @media screen and (max-width: 760px) {
   .section1 {
     display: flex;
@@ -269,6 +268,10 @@ input[type="button"].fcf-btn-block {
     color: white;
     border-radius: 5px;
   }
+  .B001{
+    display: none;
+  }
+  
 }
 
 

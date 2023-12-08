@@ -68,7 +68,7 @@ const Home = () => {
             maxWidth={{ base: "100%", md: "850px" }}
             marginX={{ base: "20px", md: "0" }}
           >
-            <GridItem className="B001" bg="#F6F6F6" borderRadius="24px">
+            <GridItem className="B001" py={5}  bg="#F6F6F6" borderRadius="24px">
               <Box
                 h="100%"
                 display="grid"
@@ -80,6 +80,7 @@ const Home = () => {
                 fontFamily= 'Plus Jakarta Sans'
               >
                 A N N A P U R N A
+
               </Box>
             </GridItem>
             <GridItem bg="#F6F6F6" p={1} borderRadius="24px" >
@@ -91,23 +92,29 @@ const Home = () => {
                 />
               </Box>
             </GridItem>
-            <GridItem bg="#F6F6F6" h="100%" w="100%" p={2} borderRadius="24px">
+            <GridItem bg="#E7F0FE" h="100%" w="100%" p={5} borderRadius="24px">
               <Box h="100%" color="white">
                 <Text
                   fontSize="xs"
-                  style={{ textAlign: "left" }}
+                  style={{ textAlign: "left" , fontWeight:'700' }}
                   color="#0B5ED7"
                   fontFamily= 'Plus Jakarta Sans'
                 >
                   What we do
                 </Text>
-                <Text fontSize="xs" fontFamily= 'Plus Jakarta Sans' style={{ textAlign: "left" }} color="#000">
+                {/* <Text fontSize="xs" fontFamily= 'Plus Jakarta Sans' style={{ textAlign: "left", fontWeight:'500' }} color="#1A2E4D">
                   We are group of friends who <br /> believe in donating
                   directly to <br /> needy people. Every Sunday <br /> We
                   Collect and People Join us <br /> to Visit the nearby areas
                   and <br /> donate the essentials
+                </Text> */}
+                <Text fontSize="1rem" fontFamily= 'Plus Jakarta Sans' style={{ textAlign: "left", fontWeight:'500' }} color="#1A2E4D">
+                  We are group of friends who believe in donating
+                  directly toneedy people. Every Sunday We
+                  Collect and People Join us to Visit the nearby areas
+                  and donate the essentials
                 </Text>
-                <Image ml="auto" height='200px' src={img001} alt="KID" />
+                <Image style={{filter:'grayscale(100%)'}} ml="auto" height='200px' src={img001} alt="KID" />
               </Box>
             </GridItem>
             <VStack>
@@ -115,22 +122,22 @@ const Home = () => {
                 bg="#F6F6F6"
                 w="100%"
                 h="100%"
-                p={3}
+                p={5}
                 borderRadius="24px"
               >
-                <Box h="100%" textAlign="center" color="#000">
+                <Box h="100%" textAlign="center">
                   <Text
                     fontSize="xs"
-                    style={{ textAlign: "left" }}
-                    color="#000"
+                    style={{ textAlign: "left" , fontWeight:'700' }}
+                    color="#888"
                     fontFamily= 'Plus Jakarta Sans'
                   >
                     How can you Contribute to this Good Deed
                   </Text>
                   <Text
                     fontSize="xs"
-                    style={{ textAlign: "left" }}
-                    color="#000"
+                    style={{ textAlign: "left",fontWeight:'500' }}
+                    color="#1A2E4D"
                     fontFamily= 'Plus Jakarta Sans'
                   >
                     If you only want to come for service, you are most welcome
@@ -140,7 +147,7 @@ const Home = () => {
                   <Button
                     as={Link}
                     to={"/Contactus"}
-                    style={{ background: "#0B5ED7", color: "white",fontFamily: 'Plus Jakarta Sans' }}
+                    style={{ background: "#0B5ED7", color: "white",fontFamily: 'Plus Jakarta Sans', textTransform:'uppercase' }}
                   >
                     Contact us
                   </Button>
@@ -151,29 +158,30 @@ const Home = () => {
                 w="100%"
                 h="100%"
                 p={5}
+                
                 borderRadius="24px"
               >
                 <Box h="100%" textAlign="center" color="#000">
                   <Text
                     fontSize="xs"
-                    style={{ textAlign: "left" }}
-                    color="#000"
+                    style={{ textAlign: "left", fontWeight:'700' }}
+                    color="#888"
                     fontFamily= 'Plus Jakarta Sans'
                   >
                     New Update
                   </Text>
                   <Text
-                    style={{ textAlign: "left", fontSize: "15px" }}
+                    style={{ textAlign: "left", fontSize: "15px",fontWeight:'500'}}
                     color="#0B5ED7"
                     fontFamily= 'Plus Jakarta Sans'
                   >
-                    Upcoming campaign on 10Nov Sunday!
+                    Upcoming campaign on 10Dec Sunday!
                   </Text>
                   <Button
                     colorScheme="whatsapp"
                     leftIcon={<FaWhatsapp size={25} />}
                     borderRadius="50px"
-                    style={{marginTop:'10px' ,fontFamily:'Plus Jakarta Sans'}}
+                    style={{marginTop:'10px' ,fontFamily:'Plus Jakarta Sans',textTransform:'uppercase', fontWeight:'700'}}
                   >
                     <a
                       href="https://chat.whatsapp.com/LBbGRUlvgeCFFsXLpNryJQ"
