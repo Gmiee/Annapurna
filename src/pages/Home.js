@@ -20,7 +20,7 @@ import img2 from "../Assets/02.jpg";
 import img3 from "../Assets/03.jpg";
 import img4 from "../Assets/04.jpg";
 import img5 from "../Assets/05.jpg";
-import img7 from "../Assets/07.jpg";
+// import img7 from "../Assets/07.jpg";
 
 const Home = () => {
   const main = {
@@ -103,13 +103,13 @@ const Home = () => {
                         borderRadius: "16px",
                       }} src={img4} alt="img04" />
                     </div>
-                    <div>
+                    {/* <div>
                       <img  style={{
                         aspectRatio: "16/9",
                         objectFit: "cover",
                         borderRadius: "16px",
                       }} src={img7} alt="img07" />
-                    </div>
+                    </div> */}
                     <div>
                       <img  style={{
                         aspectRatio: "16/9",
