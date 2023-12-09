@@ -83,25 +83,37 @@ const Home = () => {
                       alt="GroupPhoto"
                     />
                     <div>
-                      <img  style={{
-                        aspectRatio: "16/9",
-                        objectFit: "cover",
-                        borderRadius: "16px",
-                      }} src={img5} alt="img05" />
+                      <img
+                        style={{
+                          aspectRatio: "16/9",
+                          objectFit: "cover",
+                          borderRadius: "16px",
+                        }}
+                        src={img5}
+                        alt="img05"
+                      />
                     </div>
                     <div>
-                      <img  style={{
-                        aspectRatio: "16/9",
-                        objectFit: "cover",
-                        borderRadius: "16px",
-                      }} src={img3} alt="img03" />
+                      <img
+                        style={{
+                          aspectRatio: "16/9",
+                          objectFit: "cover",
+                          borderRadius: "16px",
+                        }}
+                        src={img3}
+                        alt="img03"
+                      />
                     </div>
                     <div>
-                      <img  style={{
-                        aspectRatio: "16/9",
-                        objectFit: "cover",
-                        borderRadius: "16px",
-                      }} src={img4} alt="img04" />
+                      <img
+                        style={{
+                          aspectRatio: "16/9",
+                          objectFit: "cover",
+                          borderRadius: "16px",
+                        }}
+                        src={img4}
+                        alt="img04"
+                      />
                     </div>
                     {/* <div>
                       <img  style={{
@@ -111,17 +123,28 @@ const Home = () => {
                       }} src={img7} alt="img07" />
                     </div> */}
                     <div>
-                      <img  style={{
-                        aspectRatio: "16/9",
-                        objectFit: "cover",
-                        borderRadius: "16px",
-                      }} src={img2} alt="img07" />
+                      <img
+                        style={{
+                          aspectRatio: "16/9",
+                          objectFit: "cover",
+                          borderRadius: "16px",
+                        }}
+                        src={img2}
+                        alt="img07"
+                      />
                     </div>
                   </Carousel>
                 </div>
               </Box>
             </GridItem>
-            <GridItem bg="#E7F0FE" h="100%" w="100%" p={5} borderRadius="16px" m='0'>
+            <GridItem
+              bg="#E7F0FE"
+              h="100%"
+              w="100%"
+              p={5}
+              borderRadius="16px"
+              m="0"
+            >
               <Box h="100%" color="white">
                 <Text
                   fontSize="16px"

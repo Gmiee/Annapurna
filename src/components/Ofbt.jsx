@@ -34,7 +34,8 @@ const Ofbt = () => {
               onHide={handleCloseOffcanvas}
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-              placement="start"
+              placement="top"
+              style={{ height: '400px' }}
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title style={{ fontFamily: '"Poppins", sans-serif' }} id={`offcanvasNavbarLabel-expand-${expand}`}>
