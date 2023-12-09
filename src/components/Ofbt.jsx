@@ -6,7 +6,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
-import { Avatar } from '@chakra-ui/react'
+// import { Avatar } from '@chakra-ui/react'
 
 
 const Ofbt = () => {
@@ -41,14 +41,14 @@ const Ofbt = () => {
                 <Offcanvas.Title style={{ fontFamily: '"Poppins", sans-serif' }} id={`offcanvasNavbarLabel-expand-${expand}`}>
                   A N N A P U R N A
                 </Offcanvas.Title>
-                {isAuthenticated && (
+                {/* {isAuthenticated && (
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <p style={{ fontSize: '20px', margin: '0 10px' }}>{user.given_name}</p>
                     <Avatar size="sm" src={user.picture} />
                   </div>
-                )}
+                )} */}
               </Offcanvas.Header>
-              <Offcanvas.Body style={{ textAlign: 'center', fontFamily: '"Poppins", sans-serif', fontSize: '22px' }}>
+              <Offcanvas.Body style={{ textAlign: 'center', fontFamily: '"Poppins", sans-serif', placeItems:'center', fontSize: '22px' }}>
                 <Nav className="justify-content-end flex-grow-1 pe-3 m-auto">
                   <Nav.Link as={Link} to={'/'} onClick={handleCloseOffcanvas}>
                     <button className='btn01'>Home</button>
