@@ -35,6 +35,10 @@ const Home = () => {
     gray80: "#CFD2D4",
     gray90: "#F3F4F4",
   };
+  const date ="10Dec Sunday"
+  const newDate ="17Dec Sunday"
+  const lastVisit = "Last campaign was on"
+  const upcomingCampaign = "Upcoming campaign is on"
   return (
     <>
       <ChakraProvider>
@@ -206,21 +210,15 @@ const Home = () => {
                     color="#888"
                     fontFamily="Plus Jakarta Sans"
                   >
-                    How Can You Contribute To This Good Deed
+                    How Can You Contribute To This Good Deed?
                   </Text>
                   <Text
-                    fontSize="13px"
+                    fontSize="14px"
                     style={{ textAlign: "left", fontWeight: "500" }}
                     color="#1A2E4D"
                     fontFamily="Plus Jakarta Sans"
                   >
-                    Want to be part of something good? You can help! Contribute
-                    by donating essential items like food, wheat, or rice. Join
-                    us on Sundays as we share these supplies directly with those
-                    in need. Your time, items, or even a simple presence can
-                    make a big difference. Let's spread kindness together – join
-                    our mission and contribute to making the world a better
-                    place, one Sunday at a time.
+                    Be part of something good! Donate essential items like food, wheat, or rice to help those in need. Join us on Sundays to directly share supplies. Your time, items, or presence can make a big difference. Let's spread kindness together – join our mission to make the world better, one Sunday at a time.
                   </Text>
                   <Button
                     as={Link}
@@ -230,10 +228,11 @@ const Home = () => {
                       color: "white",
                       fontFamily: "Plus Jakarta Sans",
                       textTransform: "uppercase",
-                      width: "40%",
+                      fontSize:'12px',
+                      width: "30%",
                     }}
                   >
-                    Contact us
+                    Contact us!
                   </Button>
                 </Box>
               </GridItem>
@@ -254,18 +253,19 @@ const Home = () => {
                     color="#888"
                     fontFamily="Plus Jakarta Sans"
                   >
-                    New Update
+                    Updates
                   </Text>
                   <Text
                     style={{
                       textAlign: "left",
-                      fontSize: "28px",
+                      fontSize: "16px",
                       fontWeight: "500",
                     }}
                     color="#0B5ED7"
                     fontFamily="Plus Jakarta Sans"
                   >
-                    Upcoming campaign on 10Dec Sunday!
+                    {`${lastVisit} ${date}.`} <br />
+                    {`${upcomingCampaign} ${newDate}.`}
                   </Text>
                   <Button
                     leftIcon={<FaWhatsapp size={25} />}
