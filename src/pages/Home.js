@@ -264,8 +264,13 @@ const Home = () => {
                     color="#0B5ED7"
                     fontFamily="Plus Jakarta Sans"
                   >
-                    {`${lastVisit} ${date}.`} <br />
-                    {`${upcomingCampaign} ${newDate}.`}
+                    <div className="old">
+                    {`${upcomingCampaign} ${newDate}.`} 
+                    </div>
+                     {/* <br /> */}
+                     <div className="new" style={{color:'#888', fontFamily:'Plus Jakarta Sans'}}>
+                    {`${lastVisit} ${date}.`} 
+                     </div>
                   </Text>
                   <Button
                     leftIcon={<FaWhatsapp size={25} />}
