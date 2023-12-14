@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Donate from "./pages/Donate";
 import Contactus from './pages/Contactus'
+import Error from './pages/Error'
 import Ofbt from "./components/Ofbt";
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Donate" element={<Donate />} />
           <Route path="/Contactus" element={<Contactus/>} />
+          <Route path="*" element={<Error/>} />
         </Routes>
       </BrowserRouter>
     </>

@@ -307,5 +307,15 @@ input[type="button"].fcf-btn-block {
   }
   
 }
-
-
+.error h1{
+  font-family: var(--H1-font-family);
+}
+.error p{
+  font-family: var(--H1-font-family);
+  color: #424343;
+}
+.error{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
