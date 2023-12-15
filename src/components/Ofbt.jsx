@@ -20,7 +20,7 @@ const Ofbt = () => {
       {[false].map((expand) => (
         <Navbar sticky="top" key={expand} expand={expand} className="bg-body-tertiary">
           <Container fluid>
-            <Navbar.Brand>A N N A P U R N A</Navbar.Brand>
+            <Navbar.Brand>A N N A P U R N A A</Navbar.Brand>
             {
               isAuthenticated ? (<div style={{ display: 'flex', alignItems: 'center', marginLeft:'auto', marginRight:'7px' }}>
               <p style={{ fontSize: '17px', margin: '0' }}>👋🏻{user.given_name}</p>
@@ -39,7 +39,7 @@ const Ofbt = () => {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title style={{ fontFamily: '"Poppins", sans-serif' }} id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  A N N A P U R N A
+                  A N N A P U R N A A
                 </Offcanvas.Title>
                 {/* {isAuthenticated && (
                   <div style={{ display: 'flex', alignItems: 'center' }}>
