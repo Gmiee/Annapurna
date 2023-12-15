@@ -314,8 +314,9 @@ input[type="button"].fcf-btn-block {
   font-family: var(--H1-font-family);
   color: #424343;
 }
-.error{
-  display: grid;
+/* .error{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
