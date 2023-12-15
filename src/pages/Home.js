@@ -289,7 +289,7 @@ const Home = () => {
                       rel="noreferrer"
                       target="_blank"
                     >
-                      Join Our WhatsApp Community
+                      Join Our WhatsApp Community!
                     </a>
                   </Button>
                 </Box>
