@@ -6,7 +6,6 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
-// import { Avatar } from '@chakra-ui/react'
 
 
 const Ofbt = () => {
