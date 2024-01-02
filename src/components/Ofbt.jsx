@@ -26,7 +26,8 @@ const Ofbt = () => {
               <p style={{ fontSize: '17px', margin: '0' }}>👋🏻{user.given_name}</p>
             </div>)
               :
-              (<Button onClick={e => loginWithRedirect()} variant="primary" style={{ marginLeft: 'auto', marginRight: '10px' }}>Login</Button>)
+              <></>
+              // (<Button onClick={e => loginWithRedirect()} variant="primary" style={{ marginLeft: 'auto', marginRight: '8px' }}>Login</Button>)
             }
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} onClick={() => setShowOffcanvas(true)} />
             <Navbar.Offcanvas

@@ -228,7 +228,7 @@ const Home = () => {
                       color: "white",
                       fontFamily: "Plus Jakarta Sans",
                       textTransform: "uppercase",
-                      fontSize:'12px',
+                      fontSize:'10px',
                       width: "30%",
                     }}
                   >
@@ -273,7 +273,7 @@ const Home = () => {
                      </div>
                   </Text>
                   <Button
-                    leftIcon={<FaWhatsapp size={25} />}
+                    leftIcon={<FaWhatsapp size={20} />}
                     borderRadius="10px"
                     style={{
                       marginTop: "10px",
@@ -282,6 +282,7 @@ const Home = () => {
                       fontWeight: "500",
                       backgroundColor: neutral.gray20,
                       color: main.white,
+                      fontSize:'11px',
                     }}
                   >
                     <a
