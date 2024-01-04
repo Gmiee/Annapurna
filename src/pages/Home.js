@@ -15,13 +15,19 @@ import {
   Image,
   Button,
 } from "@chakra-ui/react";
+import toast, { Toaster } from 'react-hot-toast';
 import img001 from "../Assets/001.png";
 import img2 from "../Assets/02.jpg";
 import img3 from "../Assets/03.jpg";
 import img4 from "../Assets/04.jpg";
 import img5 from "../Assets/05.jpg";
 // import img7 from "../Assets/07.jpg";
-
+const greet = ()=>{
+  toast('DHAN GURUNANAK', {
+    icon: '👏',
+  });
+}
+greet()
 const Home = () => {
   const main = {
     primary: "#0B82D7",
@@ -36,11 +42,14 @@ const Home = () => {
     gray90: "#F3F4F4",
   };
   const date ="10Dec Sunday"
-  const newDate ="17Dec Sunday"
+  const newDate ="07Jan Sunday"
   const lastVisit = "Last campaign was on"
   const upcomingCampaign = "Upcoming campaign is on"
+
+  
   return (
     <>
+    <Toaster/>
       <ChakraProvider>
         <Flex justify="center" align="center" h="100%" marginTop="3vh">
           <Grid
