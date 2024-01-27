@@ -24,7 +24,7 @@ import img5 from "../Assets/05.jpg";
 // import img7 from "../Assets/07.jpg";
 const greet = ()=>{
   toast('DHAN GURUNANAK', {
-    icon: '👏',
+    icon: '👏npm ',
   });
 }
 greet()
@@ -42,7 +42,7 @@ const Home = () => {
     gray90: "#F3F4F4",
   };
   const date ="10Dec Sunday"
-  const newDate ="07Jan Sunday"
+  const newDate ="3Feb Sunday"
   const lastVisit = "Last campaign was on"
   const upcomingCampaign = "Upcoming campaign is on"
 
