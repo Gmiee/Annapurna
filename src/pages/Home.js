@@ -22,12 +22,7 @@ import img3 from "../Assets/03.jpg";
 import img4 from "../Assets/04.jpg";
 import img5 from "../Assets/05.jpg";
 // import img7 from "../Assets/07.jpg";
-const greet = ()=>{
-  toast('DHAN GURUNANAK', {
-    icon: '👏npm ',
-  });
-}
-greet()
+
 const Home = () => {
   const main = {
     primary: "#0B82D7",
@@ -49,7 +44,6 @@ const Home = () => {
   
   return (
     <>
-    <Toaster/>
       <ChakraProvider>
         <Flex justify="center" align="center" h="100%" marginTop="3vh">
           <Grid
