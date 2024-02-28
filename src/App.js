@@ -13,7 +13,6 @@ function App() {
         <Ofbt/>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
           <Route path="/Donate" element={<Donate />} />
           <Route path="/Contactus" element={<Contactus/>} />
           <Route path="*" element={<Error/>} />
