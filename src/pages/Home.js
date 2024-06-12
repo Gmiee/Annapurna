@@ -36,8 +36,8 @@ const Home = () => {
     gray80: "#CFD2D4",
     gray90: "#F3F4F4",
   };
-  const date ="11Feb Sunday"
-  const newDate ="03March Sunday"
+  const date ="11 Feb Sunday"
+  const newDate ="16 June Sunday"
   const lastVisit = "Last campaign was on"
   const upcomingCampaign = "Upcoming campaign is on"
 
